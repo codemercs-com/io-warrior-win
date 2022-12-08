@@ -1,0 +1,9 @@
+# Compiled Object files
+*.exe
+
+# Directories
+.vscode/
+
+# Misc
+*.txt
+*.log
