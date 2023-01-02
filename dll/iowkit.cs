@@ -70,6 +70,19 @@ namespace IOWarrior
 
         // first IO-Warrior revision with serial numbers
         public const uint IOW_NON_LEGACY_REVISION = 0x1010;
+
+		//Report size (incl. ReportID)
+        public const uint IOWKIT40_IO_REPORT_SIZE = 5;
+        public const uint IOWKIT24_IO_REPORT_SIZE = 3;
+        public const uint IOWKIT56_IO_REPORT_SIZE = 8;
+        public const uint IOWKIT28_IO_REPORT_SIZE = 5;
+        public const uint IOWKIT100_IO_REPORT_SIZE = 13;
+
+        public const uint IOWKIT40_SPECIAL_REPORT_SIZE = 8;
+        public const uint IOWKIT24_SPECIAL_REPORT_SIZE = 8;
+        public const uint IOWKIT56_SPECIAL_REPORT_SIZE = 64;
+        public const uint IOWKIT28_SPECIAL_REPORT_SIZE = 64;
+        public const uint IOWKIT100_SPECIAL_REPORT_SIZE = 64;
     }
 
 
