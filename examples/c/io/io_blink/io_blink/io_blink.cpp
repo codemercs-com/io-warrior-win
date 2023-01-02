@@ -78,6 +78,7 @@ int main(int argc, char* argv[])
     if (handle == NULL)
     {
         printf_s("Failed to open device. EXIT\n");
+		IowKitCloseDevice(handle);
         return 0;
     }
 
