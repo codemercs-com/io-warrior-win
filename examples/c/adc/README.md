@@ -4,9 +4,9 @@ For further informations about the ADC functions and differences please take a l
 
 &nbsp;
 # Links
-[Datasheet IO-Warrior56](https://www.codemercs.com/downloads/iowarrior/IOW56_Datasheet.pdf)
-[Datasheet IO-Warrior28](https://www.codemercs.com/downloads/iowarrior/IOW28_Datasheet.pdf)
-[Datasheet IO-Warrior100](https://www.codemercs.com/downloads/iowarrior/IOW100_Datasheet.pdf)
+[Datasheet IO-Warrior56](https://www.codemercs.com/downloads/iowarrior/IOW56_Datasheet.pdf)  
+[Datasheet IO-Warrior28](https://www.codemercs.com/downloads/iowarrior/IOW28_Datasheet.pdf)  
+[Datasheet IO-Warrior100](https://www.codemercs.com/downloads/iowarrior/IOW100_Datasheet.pdf)  
 
 &nbsp;
 ## Contact
