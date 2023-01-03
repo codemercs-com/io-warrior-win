@@ -7,6 +7,6 @@ A list about the supported funtions can be found on the [main readme](https://gi
 
 
 ## Differences between the IO-Warrior communication
-The main difference between the IO-Warrior is the report size for the communication and the used pipes.
+The main difference for software between the IO-Warrior is the report size for the communication and the used pipes.
 Report size mean how many bytes will be write / read per transcation.  
 
