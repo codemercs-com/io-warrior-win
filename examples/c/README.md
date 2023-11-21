@@ -1,4 +1,4 @@
-# Examples for C
+# Examples for C and C++
 For each function there will be an example create with Visual Studio but not for all single devices.
 Some IO-Warrior will have special functions. For example the 'RC5' function will only be supported be the IO-Warrior24 (descontinued).
 The 'digital LED' function only by IOW28 and IOW100.  
