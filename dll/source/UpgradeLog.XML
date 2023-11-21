@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="IOW Kit">
+</Property><Property Name="Projektmappendatei" Value="C:\Users\Christoph\Documents\Visual Studio 2010\Projects\IowKit DLL\library_1_5_0\source\IOW Kit.sln">
+</Property><Property Name="Benutzeroptionendatei" Value="C:\Users\Christoph\Documents\Visual Studio 2010\Projects\IowKit DLL\library_1_5_0\source\IOW Kit.suo">
+</Property><Property Name="Date" Value="Mittwoch, 27. Juni 2012">
+</Property><Property Name="Time" Value="12:58">
+</Property></Properties><Event ErrorLevel="2" Project="" Source="IOW Kit.sln" Description="Fehler beim Erstellen der Sicherungsdatei: C:\Users\Christoph\Documents\Visual Studio 2010\Projects\IowKit DLL\library_1_5_0\source\IOW Kit.sln.old">
+</Event><Event ErrorLevel="2" Project="" Source="IOW Kit.suo" Description="Fehler beim Erstellen der Sicherungsdatei: C:\Users\Christoph\Documents\Visual Studio 2010\Projects\IowKit DLL\library_1_5_0\source\IOW Kit.suo.old">
+</Event><Event ErrorLevel="0" Project="IOW Kit" Source="IOW Kit.vcproj" Description="Converting project file 'C:\Users\Christoph\Documents\Visual Studio 2010\Projects\IowKit DLL\library_1_5_0\source\IOW Kit.vcproj'.">
+</Event><Event ErrorLevel="1" Project="IOW Kit" Source="IOW Kit.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="1" Project="IOW Kit" Source="IOW Kit.vcproj" Description="Attribute 'Detect64BitPortabilityProblems' of 'VCCLCompilerTool' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="1" Project="IOW Kit" Source="IOW Kit.vcproj" Description="Attribute 'Detect64BitPortabilityProblems' of 'VCCLCompilerTool' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="1" Project="IOW Kit" Source="IOW Kit.vcproj" Description="Attribute 'OptimizeForWindows98' of 'VCLinkerTool' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="1" Project="IOW Kit" Source="IOW Kit.vcproj" Description="MSB8012: $(TargetName) ('IOW Kit') does not match the Linker's OutputFile property value 'Release\iowkit.dll' ('iowkit') in project configuration 'Release|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetName) property value matches the value specified in %(Link.OutputFile).">
+</Event><Event ErrorLevel="1" Project="IOW Kit" Source="IOW Kit.vcproj" Description="MSB8012: $(TargetPath) ('C:\Users\Christoph\Documents\Visual Studio 2010\Projects\IowKit DLL\library_1_5_0\source\Release\IOW Kit.dll') does not match the Linker's OutputFile property value 'Release\iowkit.dll' ('C:\Users\Christoph\Documents\Visual Studio 2010\Projects\IowKit DLL\library_1_5_0\source\Release\iowkit.dll') in project configuration 'Release|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Link.OutputFile).">
+</Event><Event ErrorLevel="0" Project="IOW Kit" Source="IOW Kit.vcproj" Description="Done converting to new project file 'C:\Users\Christoph\Documents\Visual Studio 2010\Projects\IowKit DLL\library_1_5_0\source\IOW Kit.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="IOW Kit" Source="IOW Kit.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="IOW Kit.sln" Description="Die Projektmappe wurde erfolgreich konvertiert.">
+</Event><Event ErrorLevel="3" Project="" Source="IOW Kit.sln" Description="Converted">
+</Event></UpgradeLog>
