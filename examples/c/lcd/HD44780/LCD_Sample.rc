@@ -1,0 +1,197 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Deutsch (Deutschland) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)
+#ifdef _WIN32
+LANGUAGE LANG_GERMAN, SUBLANG_GERMAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)\r\n"
+    "LANGUAGE 7, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\LCD_Sample.rc2""  // Nicht mit Microsoft Visual C++ bearbeitete Ressourcen\r\n"
+    "#include ""afxres.rc""     // Standardkomponenten\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\LCD_Sample.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_LCD_SAMPLE_DIALOG DIALOGEX 0, 0, 335, 331
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Sample for LCD Function and HD44780 Compatible Displays"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Read Data from LCD",IDC_STATIC,11,21,310,137
+    GROUPBOX        "Write Data to LCD",IDC_STATIC,11,160,125,63
+    GROUPBOX        "LCD Functions",IDC_STATIC,140,160,112,63
+    GROUPBOX        "Output Mode",IDC_STATIC,247,31,70,50
+    PUSHBUTTON      "Clear LCD",IDC_LCDCLEAR,144,187,50,14
+    EDITTEXT        IDC_WRITESTRING,18,171,113,14,ES_AUTOHSCROLL
+    CONTROL         "Hex (0x00)",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | WS_GROUP,254,41,52,10
+    CONTROL         "LCD On",IDC_LCDONOFF,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | WS_TABSTOP,197,171,50,14
+    CONTROL         129,IDC_STATIC,"Static",SS_BITMAP,255,165,65,26
+    CONTROL         "",IDC_READLIST,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,19,34,221,115
+    PUSHBUTTON      "Home Pos.",IDC_LCDHOME,144,171,50,14
+    CONTROL         "Cursor On",IDC_LCDCURSOR,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | WS_TABSTOP,197,187,50,14
+    PUSHBUTTON      "Send",IDC_WRITEDATA,91,186,39,14
+    CONTROL         "Dec (123)",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,254,53,47,10
+    CONTROL         "Char (ABC)",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,254,65,52,10
+    PUSHBUTTON      "Clear List",IDC_CLEARLIST,247,135,70,14
+    PUSHBUTTON      "Read Data",IDC_READDATA,247,119,70,14
+    PUSHBUTTON      "Initialize LCD",IDC_INITIATE,165,205,60,14
+    GROUPBOX        "Report",IDC_STATIC,11,224,311,95
+    PUSHBUTTON      "Clear Report",IDC_CLEARREPORT,265,301,50,14
+    LISTBOX         IDC_REPORTLIST,19,237,296,62,LBS_NOINTEGRALHEIGHT | LBS_NOSEL | WS_VSCROLL | WS_TABSTOP
+    CTEXT           "123",IDC_COUNTER,39,202,29,8
+    PUSHBUTTON      "+",IDC_CHARFW,70,199,17,14
+    PUSHBUTTON      "-",IDC_CHARBW,22,199,17,14
+    GROUPBOX        "Cursor Position",IDC_STATIC,18,188,72,31
+    CTEXT           "Supports IOWarrior 24, 40, 56",IDC_STATIC,59,10,220,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040704e4"
+        BEGIN
+            VALUE "CompanyName", "Code Mercenaries GmbH"
+            VALUE "FileDescription", "Sample for IOW"
+            VALUE "FileVersion", "1.0"
+            VALUE "InternalName", "LCD_Sample.exe"
+            VALUE "LegalCopyright", " (c) Code Mercenaries GmbH. Alle Rechte vorbehalten."
+            VALUE "OriginalFilename", "LCD_Sample.exe"
+            VALUE "ProductName", "IOWarrior Sample: LCD"
+            VALUE "ProductVersion", "1.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x407, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_LCD_SAMPLE_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 328
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 324
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP                  "res\\CM_logo.bmp"
+#endif    // Deutsch (Deutschland) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)
+LANGUAGE 7, 1
+#pragma code_page(1252)
+#include "res\LCD_Sample.rc2"  // Nicht mit Microsoft Visual C++ bearbeitete Ressourcen
+#include "afxres.rc"     // Standardkomponenten
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
