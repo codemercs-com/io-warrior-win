@@ -26,7 +26,7 @@ iowkit.IowKitGetDeviceHandle.restype    = ctypes.c_voidp
 
 # ULONG IOWKIT_API IowKitGetNumDevs(void);
 iowkit.IowKitGetNumDevs.argtypes        = None
-iowkit.IowKitGetNumDevs.restype         = ctypes.c_ulong    # Py default
+iowkit.IowKitGetNumDevs.restype         = ctypes.c_ulong
 
 # PCHAR IOWKIT_API IowKitVersion(void);
 # res like: IO-Warrior Kit V1.5
@@ -36,12 +36,12 @@ iowkit.IowKitVersion.restype            = ctypes.c_char_p
 # ULONG IOWKIT_API IowKitProductId(IOWKIT_HANDLE iowHandle);
 # res like: 0x1501
 iowkit.IowKitGetProductId.argtypes      = [ctypes.c_voidp]
-iowkit.IowKitGetProductId.restype       = ctypes.c_ulong    # Py default
+iowkit.IowKitGetProductId.restype       = ctypes.c_ulong
 
 # ULONG IOWKIT_API IowKitGetRevision(IOWKIT_HANDLE iowHandle);
 # res like: 0x1030
 iowkit.IowKitGetRevision.argtypes       = [ctypes.c_voidp]
-iowkit.IowKitGetRevision.restype        = ctypes.c_ulong    # Py default
+iowkit.IowKitGetRevision.restype        = ctypes.c_ulong
 
 # BOOL IOWKIT_API IowKitSetTimeout(IOWKIT_HANDLE devHandle, ULONG timeout);
 iowkit.IowKitSetTimeout.argtypes        = [ctypes.c_voidp, ctypes.c_ulong]
@@ -53,15 +53,19 @@ iowkit.IowKitSetWriteTimeout.restype    = ctypes.c_bool
 
 # ULONG IOWKIT_API IowKitWrite(IOWKIT_HANDLE devHandle, ULONG numPipe, PCHAR buffer, ULONG length);
 iowkit.IowKitWrite.argtypes             = [ctypes.c_voidp, ctypes.c_ulong, ctypes.c_voidp, ctypes.c_ulong]
-iowkit.IowKitWrite.restype              = ctypes.c_ulong    # Py default
+iowkit.IowKitWrite.restype              = ctypes.c_ulong
 
 # ULONG IOWKIT_API IowKitRead(IOWKIT_HANDLE devHandle, ULONG numPipe, PCHAR buffer, ULONG length);
 iowkit.IowKitRead.argtypes              = [ctypes.c_voidp, ctypes.c_ulong, ctypes.c_voidp, ctypes.c_ulong]
-iowkit.IowKitRead.restype               = ctypes.c_ulong    # Py default
+iowkit.IowKitRead.restype               = ctypes.c_ulong
+
+# ULONG IOWKIT_API IowKitReadNonBlocking(IOWKIT_HANDLE devHandle, ULONG numPipe, PCHAR buffer, ULONG length);
+#NOT WORKING with python. Don't know why :(
+#iowkit.IowKitReadNonBlocking.argtypes   = [ctypes.c_voidp, ctypes.c_ulong, ctypes.c_voidp, ctypes.c_ulong]
+#iowkit.IowKitReadNonBlocking.restype    = ctypes.c_ulong
 
 # BOOL IOWKIT_API IowKitReadImmediate(IOWKIT_HANDLE devHandle, PDWORD value);
 # Return current value directly read from the IO-Warrior I/O pins.
-# not relevant for I2C
 iowkit.IowKitReadImmediate.argtypes     = [ctypes.c_voidp, ctypes.POINTER(ctypes.c_ulong)]
 iowkit.IowKitReadImmediate.restype      = ctypes.c_bool
 
@@ -92,9 +96,9 @@ IOWKIT_MAX_PIPES                        = ctypes.c_ulong(4)
 
 # pipe names
 IOW_PIPE_IO_PINS                        = ctypes.c_ulong(0)
-IOW_PIPE_SPECIAL_MODE                   = ctypes.c_ulong(1) # use for I2C for iow24/40/56
-IOW_PIPE_I2C_MODE                       = ctypes.c_ulong(2) #use for I2C for Iow28
-IOW_PIPE_ADC_MODE                   	= ctypes.c_ulong(3) # use for ADC for Iow28
+IOW_PIPE_SPECIAL_MODE                   = ctypes.c_ulong(1) # use for I2C for Iow24/40/56
+IOW_PIPE_I2C_MODE                       = ctypes.c_ulong(2) #use for I2C for Iow28/Iow100
+IOW_PIPE_ADC_MODE                   	= ctypes.c_ulong(3) # use for ADC for Iow28/Iow100
 
 # IO-Warrior vendor & product IDs
 IOWKIT_VENDOR_ID                        = 0x07c0
@@ -111,6 +115,10 @@ IOWKIT_PRODUCT_ID_IOW56                 = 0x1503
 IOWKIT_PRODUCT_ID_IOW56_ALPHA           = 0x158B
 # IO-Warrior 28
 IOWKIT_PRODUCT_ID_IOW28                 = 0x1504
+# IO-Warrior 28L
+IOWKIT_PRODUCT_ID_IOW28L                = 0x1505
+# IO-Warrior 100
+IOWKIT_PRODUCT_ID_IOW28                 = 0x1506
 
 # IOW Legacy devices open modes
 IOW_OPEN_SIMPLE                         = ctypes.c_ulong(1)
@@ -146,5 +154,13 @@ IOWKIT28_IO_REPORT_SIZE 				= 8
 # Special mode, i2c and adc interace for IOW28
 IOWKIT28_SPECIAL_REPORT                 = ctypes.c_ubyte * 64 #use for special mode, I2C, and ADC
 IOWKIT28_SPECIAL_REPORT_SIZE 			= 64
+
+# IO interface for IOW100
+IOWKIT100_IO_REPORT                     = ctypes.c_ubyte * 13
+IOWKIT100_IO_REPORT_SIZE 				= 13
+
+# Special mode, i2c and adc interace for IOW100
+IOWKIT100_SPECIAL_REPORT                = ctypes.c_ubyte * 64 #use for special mode, I2C, and ADC
+IOWKIT100_SPECIAL_REPORT_SIZE 			= 64
 #
 # end iowkit definitions and declarations -------------------------------------
