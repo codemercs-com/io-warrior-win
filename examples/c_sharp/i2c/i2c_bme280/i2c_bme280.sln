@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34616.47
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "i2c_bme280", "i2c_bme280\i2c_bme280.csproj", "{FE76AF9D-8696-48FE-B88D-D20623079A78}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FE76AF9D-8696-48FE-B88D-D20623079A78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE76AF9D-8696-48FE-B88D-D20623079A78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE76AF9D-8696-48FE-B88D-D20623079A78}.Debug|x64.ActiveCfg = Debug|x64
+		{FE76AF9D-8696-48FE-B88D-D20623079A78}.Debug|x64.Build.0 = Debug|x64
+		{FE76AF9D-8696-48FE-B88D-D20623079A78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE76AF9D-8696-48FE-B88D-D20623079A78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE76AF9D-8696-48FE-B88D-D20623079A78}.Release|x64.ActiveCfg = Release|x64
+		{FE76AF9D-8696-48FE-B88D-D20623079A78}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9F69385E-E4A5-43D0-8266-611FB66AD236}
+	EndGlobalSection
+EndGlobal
