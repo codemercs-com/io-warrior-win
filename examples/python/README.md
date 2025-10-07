@@ -13,13 +13,11 @@ To install the *hidapi* package, use **pip**:
 ```
 pip install hidapi
 ```
-The hidapi.dll and hidapi.lib can also be downloaded from Github (link above).  
-After installation, copy hidapi.dll and hidapi.lib into your local Python installation directory, for example:
 
-```
-C:\Users\<Username>\AppData\Local\Programs\Python\Python312\Lib\site-packages\hidapi-*
-```
-to 
+### Optional steps
+If you have trouble to run your code you can try to install the hidapi.dll and hidapi.lib by yourself. The files can be downloaded from Github (link above).  
+After downloading copy hidapi.dll and hidapi.lib into your local Python installation directory, for example:
+
 ```
 C:\Users\<Username>\AppData\Local\Programs\Python\Python312
 ```
