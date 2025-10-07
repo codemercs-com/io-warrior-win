@@ -118,7 +118,7 @@ IOWKIT_PRODUCT_ID_IOW28                 = 0x1504
 # IO-Warrior 28L
 IOWKIT_PRODUCT_ID_IOW28L                = 0x1505
 # IO-Warrior 100
-IOWKIT_PRODUCT_ID_IOW28                 = 0x1506
+IOWKIT_PRODUCT_ID_IOW100                 = 0x1506
 
 # IOW Legacy devices open modes
 IOW_OPEN_SIMPLE                         = ctypes.c_ulong(1)
