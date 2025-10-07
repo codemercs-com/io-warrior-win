@@ -20,6 +20,7 @@ if ioHandle != 0:
         if pid == IOWKIT_PRODUCT_ID_IOW40: print ("Device Type: IO-Warrior40")
         if pid == IOWKIT_PRODUCT_ID_IOW56: print ("Device Type: IO-Warrior56")
         if pid == IOWKIT_PRODUCT_ID_IOW28: print ("Device Type: IO-Warrior28")
+        if pid == IOWKIT_PRODUCT_ID_IOW100: print ("Device Type: IO-Warrior100")
 
         revision = iowkit.IowKitGetRevision(subHandle)
         print ("Revision: ", format(revision, 'x'))
